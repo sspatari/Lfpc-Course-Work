@@ -1,0 +1,15 @@
+{
+	"Grammar": {
+		"Neterminal": ["S","A","D","L"],
+		"Terminal": ["a","i","d","v"],
+		"Productions":[
+			{"S": "dL"},
+			{"L": "D"},
+			{"L": "DvL"},
+			{"D": "iA"},
+			{"A": "a"},
+			{"A": "aA"}
+		],
+		"Start": "S"
+	}
+}
