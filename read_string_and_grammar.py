@@ -8,7 +8,8 @@ def read_json_file(file_name):
     fo.close()
     return data;
 
-string_json = read_json_file("base_string.json")
-grammar_json = read_json_file("grammar.json")
-#print(string_json)
-#print(grammar_json)
+def creat_grammar_variable():
+    string_json = read_json_file("base_string.json")
+    grammar_json = read_json_file("grammar.json")
+    #print(string_json)
+    #print(grammar_json)

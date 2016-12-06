@@ -1,7 +1,7 @@
 {"Grammar": {
-	"VN": ["S","A","D","L"],
-	"VT": ["a","i","d","v"],
-	"P":[
+	"Neterminal": ["S","A","D","L"],
+	"Terminal": ["a","i","d","v"],
+	"Productions":[
 		{"S": "dL"},
 		{"L": "D"},
 		{"L": "DvL"},
@@ -9,5 +9,5 @@
 		{"A": "a"},
 		{"A": "aA"}
 	],
-	"S": "S"
+	"Start": "S"
 }}
