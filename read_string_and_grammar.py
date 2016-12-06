@@ -9,10 +9,14 @@ def read_json_file(file_name):
     fo.close()
     return data
 
-def creat_grammar_variable():
-    string_json = read_json_file("base_string.json")
-    grammar_json = read_json_file("grammar.json")
-    print(string_json)
-    print(grammar_json)
+def get_string():
+    return read_json_file("base_string.json")["string"]
 
-creat_grammar_variable()
+def get_terminals():
+    return read_json_file("grammar.json")["Grammar"]["Terminal"]
+
+def get_nonterminals():
+    return read_json_file("grammar.json")["Grammar"]["Nonterminal"]
+
+def get_productions():
+    return read_json_file("grammar.json")["Grammar"]["Productions"]

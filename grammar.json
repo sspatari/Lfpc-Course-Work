@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"Grammar": {
 		"Neterminal": ["S","A","D","L"],
@@ -13,3 +14,18 @@
 		"Start": "S"
 	}
 }
+=======
+{"Grammar": {
+	"Nonterminal": ["S","A","D","L"],
+	"Terminal": ["a","i","d","v"],
+	"Productions":[
+		{"S": "dL"},
+		{"L": "D"},
+		{"L": "DvL"},
+		{"D": "iA"},
+		{"A": "a"},
+		{"A": "aA"}
+	],
+	"Start": "S"
+}}
+>>>>>>> 43cb1f146ae8a11d0894cb385c044387ed9b3615
