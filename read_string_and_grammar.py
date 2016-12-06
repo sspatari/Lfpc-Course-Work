@@ -20,3 +20,6 @@ def get_nonterminals():
 
 def get_productions():
     return read_json_file("grammar.json")["Grammar"]["Productions"]
+
+def get_start():
+    return read_json_file("grammar.json")["Grammar"]["Start"]
