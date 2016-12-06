@@ -1,4 +1,5 @@
 import json
+from pprint import pprint
 
 #Returns the read base_string
 def read_json_file(file_name):
@@ -6,10 +7,16 @@ def read_json_file(file_name):
     data_string = fo.read() #obtain string from file
     data = json.loads(data_string) #from string to data
     fo.close()
-    return data;
+    return data
 
-def creat_grammar_variable():
-    string_json = read_json_file("base_string.json")
-    grammar_json = read_json_file("grammar.json")
-    #print(string_json)
-    #print(grammar_json)
+def get_string():
+    return read_json_file("base_string.json")["string"]
+
+def get_terminals():
+    return read_json_file("grammar.json")["Grammar"]["Terminal"]
+
+def get_nonterminals():
+    return read_json_file("grammar.json")["Grammar"]["Nonterminal"]
+
+def get_productions():
+    return read_json_file("grammar.json")["Grammar"]["Productions"]
