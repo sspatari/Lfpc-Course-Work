@@ -1,5 +1,5 @@
 {"Grammar": {
-	"Neterminal": ["S","A","D","L"],
+	"Nonterminal": ["S","A","D","L"],
 	"Terminal": ["a","i","d","v"],
 	"Productions":[
 		{"S": "dL"},
