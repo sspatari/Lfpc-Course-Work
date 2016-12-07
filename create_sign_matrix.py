@@ -51,7 +51,7 @@ def get_objects_rule4(right): #N1N2 Last(N1)>Last(N2)&T
                         sign_matrix_objects.append(sign_matrix_object)
     return sign_matrix_objects
 
-def get_sign_matrix():
+def get_sign_matrix_obj():
     sign_matrix = {}
     sign_matrix["matrix"] = []
     for production in get_productions():

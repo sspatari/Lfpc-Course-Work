@@ -1,13 +1,15 @@
 {"Grammar": {
-	"Nonterminal": ["S","A","D","L"],
-	"Terminal": ["a","i","d","v"],
+	"Nonterminal": ["S","A","B","C","D"],
+	"Terminal": ["a","b","c","d","e"],
 	"Productions":[
-		{"S": "dL"},
-		{"L": "D"},
-		{"L": "DvL"},
-		{"D": "iA"},
-		{"A": "a"},
-		{"A": "aA"}
+		{"S": "B"},
+		{"B": "C"},
+		{"B": "CcB"},
+		{"C": "adD"},
+		{"D": "Ae"},
+		{"A": "b"},
+		{"A": "Ab"},
+		{"B": "d"}
 	],
 	"Start": "S"
 }}

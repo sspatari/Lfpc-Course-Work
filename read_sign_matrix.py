@@ -1,10 +1,8 @@
-import json
-from read_string_and_grammar import *
-from pprint import pprint
+from create_sign_matrix import *
 
-def get_sign_matrix_obj():
-    with open('sign_matrix.json') as data_file:
-        return json.load(data_file)
+# def get_sign_matrix_obj():
+#     with open('sign_matrix.json') as data_file:
+#         return json.load(data_file)
 
 def get_final_string(before_str):
     after_str = before_str.replace('$<', '$').replace('>$', '$').replace('$', '>$<')
