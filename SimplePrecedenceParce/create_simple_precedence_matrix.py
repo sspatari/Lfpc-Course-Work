@@ -44,6 +44,7 @@ def get_last_of_nonterminal(nonterminal):
 
 
 # pprint(get_productions())
+print("First Last Matrix is given below")
 pprint(get_simple_precedent_matrix())
 # array = []
 # find_first(array,"A")
