@@ -60,4 +60,7 @@ def get_sign_matrix_obj():
             sign_matrix["matrix"] += get_objects_rule2(right)
             sign_matrix["matrix"] += get_objects_rule3(right)
             sign_matrix["matrix"] += get_objects_rule4(right)
+
     return sign_matrix
+
+pprint(get_sign_matrix_obj())

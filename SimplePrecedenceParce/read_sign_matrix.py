@@ -30,8 +30,10 @@ def replace_string(final_string, productions):
 
 
 def check_final_string(final_string, productions):
+    pprint(final_string)
     while final_string != '$$':
         final_string = replace_string(final_string, productions)
+        pprint(final_string)
         if final_string == '$<' + get_start() + '>$':
             return True
     return False
@@ -43,7 +45,7 @@ productions = get_productions()
 
 # replace_string('d<i=A>v<i<a<a', productions)
 # pprint(data)
-# pprint(string)
+pprint(string)
 # pprint(final_string)
-# pprint(productions)
+pprint(productions)
 pprint(check_final_string(final_string, productions))

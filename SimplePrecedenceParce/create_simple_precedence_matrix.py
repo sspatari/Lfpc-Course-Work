@@ -44,7 +44,7 @@ def get_last_of_nonterminal(nonterminal):
 
 
 # pprint(get_productions())
-# pprint(get_simple_precedent_matrix())
+pprint(get_simple_precedent_matrix())
 # array = []
 # find_first(array,"A")
 # find_last(array,"A")
