@@ -1,6 +1,6 @@
 import json
 
-#Returns the read base_string
+#Returns data dictionary
 def read_json_file(file_name):
     fo = open(file_name,"r") #Open file json
     data_string = fo.read() #Obtain string from file
@@ -9,4 +9,3 @@ def read_json_file(file_name):
     return data
 
 input_dict = read_json_file("input.json")
-# @ <-- epsilon
