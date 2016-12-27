@@ -21,7 +21,7 @@ def left_factoring(nonterminal_list,production_list):
 			right_part_list = [right_part[index] for index in nonterminal_index_list]
 			# print(nonterminal,right_part_list)
 			prefixes_list = find_prefixes(right_part_list)
-			print(prefixes_list)
+			# print(prefixes_list)
 			if (len(prefixes_list) != len(right_part_list)):
 				remove_nonterminal_index_list += nonterminal_index_list
 				prefix_sufixes_dict = find_prefix_suffixes(right_part_list, prefixes_list)
@@ -89,8 +89,6 @@ def create_new_productions_and_nonterminal(nonterminal, prefix_sufixes_dict):
 			new_nonterminal_list.append(new_nonterminal)
 	return new_nonterminal_list, new_productions
 
-
-
-pprint(input_dict)
 input_dict["Grammar"]["Nonterminal"],input_dict["Grammar"]["Productions"] = left_factoring(input_dict["Grammar"]["Nonterminal"],input_dict["Grammar"]["Productions"])
+print("Data after left factoring")
 pprint(input_dict)
