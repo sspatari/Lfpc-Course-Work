@@ -37,7 +37,7 @@ def left_factoring(nonterminal_list,production_list):
 
 	# print("Index of nonterminal to remove",remove_nonterminal_index_list)
 	# print("Productions",production_list)
-	production_list = [production_list[index] for index,elem in enumerate(production_list) if index not in remove_nonterminal_index_list]
+	production_list = [elem for index,elem in enumerate(production_list) if index not in remove_nonterminal_index_list]
 	# print("Productions",production_list)
 	# print("New Productions",new_productions_final)
 	production_list += new_productions_final
