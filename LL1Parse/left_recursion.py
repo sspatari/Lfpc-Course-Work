@@ -34,4 +34,5 @@ def left_recursion(nonterminal_list,production_list):
 
 
 input_dict["Grammar"]["Nonterminal"],input_dict["Grammar"]["Productions"] = left_recursion(input_dict["Grammar"]["Nonterminal"],input_dict["Grammar"]["Productions"])
+print("Data after left recursion")
 pprint(input_dict)
