@@ -8,7 +8,7 @@ def left_recursion(nonterminal_list,production_list):
 
     for nonterminal in nonterminal_with_LR_list:
         counter = 1
-        while(1): #this is meant to create a proper nonterminal that did not exist
+        while(1): #this loop is meant to create a proper new_nonterminal that did not exist
             new_nonterminal = nonterminal+str(counter)
             if new_nonterminal in nonterminal_list:
                 counter+=1
