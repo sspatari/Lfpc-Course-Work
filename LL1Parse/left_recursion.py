@@ -28,8 +28,8 @@ def left_recursion(nonterminal_list,production_list):
     # print(new_nonterminal_list)
     production_list = [production for production in production_list for
         left,right in production.items() if left not in nonterminal_with_LR_list] #removed the changed productions
-    production_list += new_production_list
-    nonterminal_list += new_nonterminal_list
+    production_list += new_production_list #add new productions
+    nonterminal_list += new_nonterminal_list #add new nonterminals
     return nonterminal_list, production_list
 
 
