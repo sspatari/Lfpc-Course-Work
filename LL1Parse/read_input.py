@@ -1,4 +1,5 @@
 import json
+from pprint import pprint
 
 #Returns data dictionary
 def read_json_file(file_name):
@@ -9,3 +10,6 @@ def read_json_file(file_name):
     return data
 
 input_dict = read_json_file("input.json")
+
+print('\nInput Data\n')
+pprint(input_dict)
