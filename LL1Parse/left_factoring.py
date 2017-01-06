@@ -90,5 +90,5 @@ def create_new_productions_and_nonterminal(nonterminal, prefix_sufixes_dict):
 	return new_nonterminal_list, new_productions
 
 input_dict["Grammar"]["Nonterminal"],input_dict["Grammar"]["Productions"] = left_factoring(input_dict["Grammar"]["Nonterminal"],input_dict["Grammar"]["Productions"])
-print("Data after left factoring")
+print("\nData after left factoring\n")
 pprint(input_dict)

@@ -1,9 +1,5 @@
 from read_input import *
 from ll1_parse_table import *
-from pprint import pprint
-import re
-
-print('\nCheck string\n')
 
 stack = [input_dict['Grammar']['Start']]
 string = input_dict['string'] + '$'
@@ -49,5 +45,6 @@ def check_string(ll1_table, stack, string):
 
 ll1_table = creat_ll1_table()
 
+print('\nCheck string\n')
 print(stack, string[:len(string) - 1])    # (string without last char)
 check_string(ll1_table, stack, string)

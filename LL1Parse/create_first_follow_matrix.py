@@ -98,5 +98,5 @@ def find_first_for_follow(follow_set,nonterminal): # finds all firsts refering t
                     epsilon_test = True
     return epsilon_test
 
-print("\nThe first follow matrix")
+print("\nThe first follow matrix\n")
 pprint(create_first_follow_matrix())

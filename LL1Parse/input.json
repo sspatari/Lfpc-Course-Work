@@ -1,15 +1,17 @@
 {
-	"string": "dbaacbaaa",
+	"string": "adbbecd",
 	"Grammar": {
-		"Nonterminal": ["S","A","B","D"],
-		"Terminal": ["a","b","c","d"],
+		"Nonterminal": ["S","A","B","C","D"],
+		"Terminal": ["a","b","c","d","e"],
 		"Productions":[
-			{"S": "dA"},
-			{"A": "B"},
-			{"A": "BcA"},
-			{"B": "bD"},
-			{"D": "a"},
-			{"D": "aD"}
+			{"S": "B"},
+			{"B": "C"},
+			{"B": "CcB"},
+			{"C": "adD"},
+			{"D": "Ae"},
+			{"A": "b"},
+			{"A": "Ab"},
+			{"B": "d"}
 		],
 		"Start": "S"
 	}

@@ -1,6 +1,5 @@
 from read_input import *
 from create_first_follow_matrix import *
-from pprint import pprint
 
 first_follow_obj = create_first_follow_matrix()
 
