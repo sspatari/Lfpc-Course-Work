@@ -1,5 +1,5 @@
 {
-	"string": "adbbecd",
+	"string": "adbecadbbe",
 	"Grammar": {
 		"Nonterminal": ["S","A","B","C","D"],
 		"Terminal": ["a","b","c","d","e"],
@@ -10,8 +10,7 @@
 			{"C": "adD"},
 			{"D": "Ae"},
 			{"A": "b"},
-			{"A": "Ab"},
-			{"B": "d"}
+			{"A": "Ab"}
 		],
 		"Start": "S"
 	}
