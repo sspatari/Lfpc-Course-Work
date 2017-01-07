@@ -52,9 +52,9 @@ def check_string(ll1_table, stack, string):
 
 ll1_table = creat_ll1_table()
 
-print('\nCheck string\n')
-print(stack, string[:len(string) - 1])    # (string without last char)
 if check_if_ll1(ll1_table):
+    print('\nCheck string\n')
+    print(stack, string[:len(string) - 1])    # (string without last char)
     check_string(ll1_table, stack, string)
 else:
-    print('Not LL1')
+    print("\nNot LL1 can't check string")
