@@ -8,6 +8,13 @@ all_symbols = input_dict['Grammar']['Nonterminal'] + input_dict['Grammar']['Term
 def combine_2symbols_elements(array, start):
     array[start:start + 2] = [''.join(array[start:start + 2])]
 
+def check_if_ll1(ll1_table):
+    for key1 in ll1_table:
+        for key2 in ll1_table[key1]:
+            if len(ll1_table[key1][key2]) > 1:
+                return False
+    return True
+
 def prepare_production_for_stack(prod):
     array = [*prod]
     index = 0
@@ -47,4 +54,7 @@ ll1_table = creat_ll1_table()
 
 print('\nCheck string\n')
 print(stack, string[:len(string) - 1])    # (string without last char)
-check_string(ll1_table, stack, string)
+if check_if_ll1(ll1_table):
+    check_string(ll1_table, stack, string)
+else:
+    print('Not LL1')
