@@ -32,8 +32,8 @@ def left_factoring(nonterminal_list,production_list):
 				new_nonterminal_list, new_productions = left_factoring(new_nonterminal_list,new_productions) #recursion
 				# print("new_nonterminal_list after",new_nonterminal_list)
 				# print("new_productions after",new_productions)
-				new_productions_final += new_productions
 				new_nonterminal_list_final += new_nonterminal_list
+				new_productions_final += new_productions
 
 	# print("Index of nonterminal to remove",remove_nonterminal_index_list)
 	# print("Productions",production_list)
@@ -54,7 +54,7 @@ def find_prefixes(strings):
 			prefixes = letters  # assumes there will always be a prefix
 		else:
 			poss_prefixes = [prefix + letters[i] for i, prefix in enumerate(prefixes)]
-			prefixes = [prefix if poss_prefixes.count(prefix) == letters.count(prefix) else prefixes[i] for i, prefix in enumerate(poss_prefixes)]
+			prefixes = [prefix if poss_prefixes.count(prefix) == letters.count(prefix) or poss_prefixes.count(prefix)==prefixes.count(prefix[:-1]) else prefixes[i] for i, prefix in enumerate(poss_prefixes)]
 	return list(set(prefixes))
 
 def find_prefix_suffixes(strings, prefixes):
@@ -90,5 +90,5 @@ def create_new_productions_and_nonterminal(nonterminal, prefix_sufixes_dict):
 	return new_nonterminal_list, new_productions
 
 input_dict["Grammar"]["Nonterminal"],input_dict["Grammar"]["Productions"] = left_factoring(input_dict["Grammar"]["Nonterminal"],input_dict["Grammar"]["Productions"])
-print("Data after left factoring")
+print("\nData after left factoring\n")
 pprint(input_dict)
